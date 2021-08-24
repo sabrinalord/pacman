@@ -1,0 +1,97 @@
+body {background:#2a00ff;}
+.sitetag {
+    font-family: 'Londrina Outline';
+	color:white;
+	font-size: 5rem;
+	text-align:center;
+	opacity: 0.6;
+}
+
+/*---------------- Scores --------------*/
+
+.scoreBox {
+	    text-align: center;
+    color: white;
+    width: 20vw;
+    margin: auto;
+	font-family:courier;
+	font-size:0.9rem;
+}
+
+.bonusBox {
+    right: 10em;
+	position:absolute;
+	color: white;
+    font-family: 'Londrina Outline';
+    font-size: 4rem;
+    margin:2em;
+}
+
+/*---------------- Grid styling --------------*/
+
+.grid {
+width: 560px;
+height: 560px;
+border: 1px solid grey;
+margin:auto;
+display:flex;
+flex-wrap: wrap;
+background: black;	
+}
+
+.grid div {
+	width: 20px;
+	height:20px; 
+}
+
+/*---------------- Game pieces --------------*/
+
+
+.pac-dot {
+   background: radial-gradient(circle, rgba(255,252,0,1) 22%, rgba(0,0,0,0) 22%);
+   border-radius: 50%;
+}
+
+.wall {
+    background-color: #fcc6c6;
+}
+
+.power-pellet {
+    background-color: green;
+    border-radius: 7.5px;
+}
+
+.pacman {background-image: url('images/pacman.png');}
+
+.blinky {background-image: url(images/orange_ghost.png);}
+
+.inky {background-image: url(images/blue_ghost.png);}
+
+.clyde {background-image: url(images/red_ghost.png);}
+
+.pinky {background-image: url(images/pink_ghost.png);}
+
+.pacman, .blinky, .inky, .clyde, .pinky {
+	background-size:contain;
+	background-repeat: no-repeat;
+}
+
+/*----------------- Movements-------------*/
+
+.faceleft {
+	  transform: scaleX(-1);
+}
+
+.faceup {
+	  transform: rotate(-90deg);
+}
+
+.facedown {
+	transform:rotate(90deg);
+}
+
+.scared {
+  filter: brightness(var(--value, 5));
+}
+
+
